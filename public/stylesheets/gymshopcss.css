@@ -1,0 +1,218 @@
+html {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background-image: url('hack.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+
+header {
+    background-size: cover;
+    text-align: center;
+    background-clip: content-box; 
+
+}
+
+input[type="date"] {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+
+nav {
+    background-color: rgba(0, 50, 0, 0 );
+    text-align: center;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+
+ul li {
+    border: 5px solid transparent;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+ul li a {
+    color: #559747;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+
+
+}
+
+
+
+ul li a {
+    transition: color 1s; 
+}
+
+ul li a:hover {
+    color: #fafafa;
+}
+
+
+
+
+
+.booking1 {
+    background: rgba(32, 22, 22, 0.7);
+    padding: 50px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #0f0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(77, 163, 81, 0.5);
+}
+ h2 {
+    font-size: 1.5em;
+    color: #0f0;
+    text-transform: uppercase;
+ }
+ form {
+    text-align: left;
+ }
+ label {
+    color: #0f0;
+    font-size: 16px;
+    margin-bottom: 5px;
+ }
+ input[type="text"],
+ input[type="date"],
+ input[type="email"],
+ input[type="tel"] {
+    width: 100%;
+    background: #333;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 10px;
+ }
+ input[type="submit"] {
+    padding: 8px;
+    background: #0f0;
+    color: #000;
+
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+
+ }
+
+ .submitbutton {
+    padding: 8px;
+    background: #0f0;
+    color: #000;
+
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+
+ }
+
+ .Text123 {
+    padding: 8px;
+    background: #0f0;
+    color: #000;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    display: inline-block; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+.user-booking > div {
+    border: 2px solid green;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-booking button {
+    padding: 8px;
+    background: #0f0;
+    color: #000;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.user-booking span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.testerclass {
+    margin-bottom: 10px;
+    line-height: 1.5; 
+    color: #333;
+}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: large;
+  }
+
+.user-booking-container {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.custom-bullet {
+    font-size: 18px;
+    color: #149718; 
+    margin-right: 5px;
+}
+
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    color: rgb(70, 130, 180); 
+}

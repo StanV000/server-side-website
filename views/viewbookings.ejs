@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>View bookings</title>
+      <link rel="stylesheet" href="/stylesheets/gymshopcss.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/booking">Booking</a></li>
+               <li><a href="/viewbookings">Current bookings</a></li>
+               <li><a href="About">About</a></li>
+               <li><a href="Help">Help</a></li>
+            </ul>
+         </nav>   
+      </header>
+      <main>
+         <div class="center-container">
+            <p class="Text123">Successful booking</p>
+         </div>
+         <div class="search-form">
+            <form method="post" action="/viewbookings">
+               <label for="usernameInput">Enter Username:</label>
+               <input type="text" id="usernameInput" name="username">
+             
+               <label for="startDateInput">From:</label>
+               <input type="date" id="startDateInput" name="startDate">
+             
+               <label for="endDateInput">To:</label>
+               <input type="date" id="endDateInput" name="endDate">
+             
+               <button class="submitbutton" type="submit">Search Bookings</button>
+            </form>
+         </div>
+         
+         <div class="Booking">
+            <div class="user-booking-container">
+               <div class="user-booking">
+                  <% if (allBookings && allBookings.length > 0) { %>
+                     <% allBookings.forEach(({_id, username, surname, dob, email, telephone, datetime}) => { %>
+                        <div class="testerclass">
+                           Username: <%= username %><br>
+                           Surname: <%= surname %><br>
+                           dob: <%= dob.toDateString() %><br>
+                           email: <%= email %><br>
+                           number: <%= telephone %><br>
+                           Booking Time: <%= datetime %><br>
+                           <form method="post" action="/edit/<%= _id %>">
+                              <button type="submit">update</button>
+                           </form>
+                           <form method="post" action="/deleteBooking/<%= _id %>">
+                              <button type="submit">Delete</button>
+                           </form>
+                        </div>
+                     <% }); %>
+                  <% } else { %>
+                     <p>No bookings available</p>
+                  <% } %>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="../public/javascripts/script.js"></script>
+   </body>
+</html>

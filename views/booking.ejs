@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Gym Workshop</title>
+   <link rel="stylesheet" href="/stylesheets/gymshopcss.css">
+</head>
+<body>
+<header>
+   <nav>
+      <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/booking">Booking</a></li>
+         <li><a href="/viewbookings">Current bookings</a></li>
+         <li><a href="About">About</a></li>
+         <li><a href="Help">Help</a></li>
+      </ul>
+   </nav>
+</header>
+
+   <main>
+      <div class="booking1">
+         <h2> Booking Form </h2>
+         <form action="/createBooking" method="POST">
+            <div>
+               <label for="username">Enter Userame</label>
+            </div>
+            <div class="booking2">
+               <div>
+                  <input type="text" id="username" name="username" required>
+               </div>
+               <div>
+                  <label for="username">Username</label>
+               </div>
+               <div>
+                  <input type="text" id="surname" name="surname" required>
+               </div>
+               <div>
+                  <label for="dob">Date of Birth</label>
+               </div>
+               <div>
+                  <input type="date" id="dob" name="dob" required>
+               </div>
+               <div>
+                  <label for="email">Email Address</label>
+               </div>
+               <div>
+                  <input type="email" id="email" name="email" required>
+               </div>
+               <div>
+                  <label for="telephone">Phone Number</label>
+               </div>
+               <div>
+                  <input type="tel" id="telephone" name="telephone" pattern="[0-9]*" maxlength="10"
+                     title="please enter numbers only" required>
+               </div>
+               <div>
+                  <label for="cardname">CardName</label>
+               </div>
+               <div>
+                  <input type="text" id="cardname" name="cardname" required>
+               </div>
+               <div>
+                  <label for="cardnumber">CardNumber</label>
+               </div>
+               <div>
+                  <input type="text" id="cardnumber" name="cardnumber" pattern="[0-9]*"  maxlength="16" required>
+               </div>
+               <div>
+                  <label for="username">CVV</label>
+               </div>
+               <div>
+                  <input type="text" id="cvv" name="cvv" pattern="[0-9]*" maxlength="3"
+                     title="Please Enter Numbers Only" required>
+               </div>
+
+
+               <div class="submitbutton">
+                  <input type="submit" value="Book Now">
+               </div>
+            </div>
+      </form>
+      </div>
+
+</main>
+</body>
+</html>
